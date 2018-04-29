@@ -1,0 +1,70 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bookstore/register.css' %}"/>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div align="center">
+    <div class="box">
+        <h1>Registration Form</h1>
+        <form method="POST">
+            {%csrf_token%}
+
+            <div class="inputBox">
+                <input type="text" name="username" required="">
+                <label>Name</label>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" required="">
+                <label>Email id</label>
+            </div>
+            <div class="inputBox">
+                <input id="password" type="password" name="password" required="">
+                <label>password</label>
+            </div>
+            <div class="inputBox">
+                <input id="password_confirm" type="password" name="confirm_password" required="">
+                <label>Confirm password</label>
+
+
+            </div>
+            <input type="submit" name="" value="submit" id="submit">
+            <script>
+                        $(function () {
+        $("#submit").click(function () {
+
+            var password = $("#password").val();
+            var confirmPassword = $("#password_confirm").val();
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+             return false;
+            }
+            return true;
+        });
+    });
+
+
+            </script>
+        </form>
+    </div>
+</div>
+<!--/container-->
+
+
+</body>
+</html>

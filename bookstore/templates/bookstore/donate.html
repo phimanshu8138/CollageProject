@@ -1,0 +1,393 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bookstore/donate.css' %}"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+   function myFunction(){
+        var element = document.getElementById("optionMenu");
+        var getvalue = element.options[element.selectedIndex].value;
+
+        if(getvalue == "<--Select-->")
+        {
+        var subselect = document.getElementById("subcategory");
+        subselect.options.length = 0;
+        var supersubselect = document.getElementById("subcategory1");
+        supersubselect.options.length = 0;
+        }
+
+        else if(getvalue == "Arts")
+        {
+        var subselect = document.getElementById("subcategory");
+        subselect.options.length = 0;
+        var supersubselect = document.getElementById("subcategory1");
+        supersubselect.options.length = 0;
+        }
+
+        else if(getvalue == "School"){
+        var subselect = document.getElementById("subcategory");
+                 subselect.options.length = 0;
+
+            var optionelement = document.createElement("option");
+            var optionelement1 = document.createElement("option");
+            var optionelement2 = document.createElement("option");
+            var optionelement3 = document.createElement("option");
+            var text = document.createTextNode("<--Select-->");
+            var text1 = document.createTextNode("9th To 12th");
+            var text2 = document.createTextNode("Under Graduates");
+            var text3 = document.createTextNode("Post Graduates");
+            optionelement.appendChild(text);
+            optionelement1.appendChild(text1);
+            optionelement2.appendChild(text2);
+            optionelement3.appendChild(text3);
+
+
+
+            subselect.appendChild(optionelement);
+            subselect.appendChild(optionelement1);
+            subselect.appendChild(optionelement2);
+            subselect.appendChild(optionelement3);
+
+
+            document.getElementById("subcategory").style.visibility="visible";
+
+        }
+        else if(getvalue == "Drama"){
+            var subselect = document.getElementById("subcategory");
+            subselect.options.length = 0;
+            var supersubselect = document.getElementById("subcategory1");
+            supersubselect.options.length = 0;
+
+        }
+
+        else if(getvalue == "Entrance"){
+            var subselect = document.getElementById("subcategory");
+            subselect.options.length = 0;
+
+            var optionelement = document.createElement("option");
+            var optionelement1 = document.createElement("option");
+            var optionelement2 = document.createElement("option");
+            var optionelement3 = document.createElement("option");
+            var optionelement4 = document.createElement("option");
+            var optionelement5 = document.createElement("option");
+            var text = document.createTextNode("<--Select-->");
+            var text1 = document.createTextNode("JEE Main");
+            var text2 = document.createTextNode("JEE Advanced");
+            var text3 = document.createTextNode("BITSAT");
+            var text4 = document.createTextNode("CAT");
+            var text5= document.createTextNode("GATE");
+            optionelement.appendChild(text);
+            optionelement1.appendChild(text1);
+            optionelement2.appendChild(text2);
+            optionelement3.appendChild(text3);
+            optionelement4.appendChild(text4);
+            optionelement5.appendChild(text5);
+
+
+            subselect.appendChild(optionelement);
+            subselect.appendChild(optionelement1);
+            subselect.appendChild(optionelement2);
+            subselect.appendChild(optionelement3);
+            subselect.appendChild(optionelement4);
+            subselect.appendChild(optionelement5);
+
+
+
+        }
+        else if (getvalue == "Compitative"){
+            var subselect = document.getElementById("subcategory");
+            subselect.options.length = 0;
+
+            var optionelement = document.createElement("option");
+            var optionelement1 = document.createElement("option");
+             var text = document.createTextNode("<--Select-->");
+            var text1 = document.createTextNode("SSC & BANK");
+
+            optionelement.appendChild(text);
+            optionelement1.appendChild(text1);
+
+
+
+            subselect.appendChild(optionelement);
+            subselect.appendChild(optionelement1);
+
+        }
+
+        else if (getvalue == "Biography"){
+            var subselect = document.getElementById("subcategory");
+            subselect.options.length = 0;
+            var supersubselect = document.getElementById("subcategory1");
+            supersubselect.options.length = 0;
+        }
+
+
+    }
+
+
+
+
+
+    function subFunction(){
+
+        var elementtop = document.getElementById("subcategory");
+        var getvalue = elementtop.options[elementtop.selectedIndex].value;
+
+
+        if(getvalue == "<--Select-->"){
+
+        var supersubselect = document.getElementById("subcategory1");
+        supersubselect.options.length = 0;
+        }
+
+       else if(getvalue == "9th To 12th"){
+
+            var subselect = document.getElementById("subcategory1");
+            subselect.options.length = 0;
+            var optionelement = document.createElement("option");
+            var optionelement1 = document.createElement("option");
+            var optionelement2 = document.createElement("option");
+            var optionelement3 = document.createElement("option");
+            var optionelement4 = document.createElement("option");
+
+            var text = document.createTextNode("Hindi");
+            var text1 = document.createTextNode("English");
+            var text2 = document.createTextNode("Math");
+            var text3 = document.createTextNode("Social Science");
+            var text4= document.createTextNode("Computer");
+            optionelement.appendChild(text);
+            optionelement1.appendChild(text1);
+            optionelement2.appendChild(text2);
+            optionelement3.appendChild(text3);
+            optionelement4.appendChild(text4);
+            subselect.appendChild(optionelement);
+            subselect.appendChild(optionelement1);
+            subselect.appendChild(optionelement2);
+            subselect.appendChild(optionelement3);
+            subselect.appendChild(optionelement4);
+        }
+
+        else if(getvalue == "Under Graduates")
+        {
+        var subselect = document.getElementById("subcategory1");
+            subselect.options.length = 0;
+            var optionelement = document.createElement("option");
+            var optionelement1 = document.createElement("option");
+            var optionelement2 = document.createElement("option");
+            var optionelement3 = document.createElement("option");
+            var optionelement4 = document.createElement("option");
+            var optionelement5 = document.createElement("option");
+
+            var text = document.createTextNode("B.A");
+            var text1 = document.createTextNode("BCA");
+
+            var text2 = document.createTextNode("B.Com");
+            var text3 = document.createTextNode("B.Pharma");
+            var text4 = document.createTextNode("BSc");
+            var text5 = document.createTextNode("B.Tech");
+            optionelement.appendChild(text);
+            optionelement1.appendChild(text1);
+            optionelement2.appendChild(text2);
+            optionelement3.appendChild(text3);
+            optionelement4.appendChild(text4);
+            optionelement5.appendChild(text5);
+
+            subselect.appendChild(optionelement);
+            subselect.appendChild(optionelement1);
+            subselect.appendChild(optionelement2);
+            subselect.appendChild(optionelement3);
+            subselect.appendChild(optionelement4);
+            subselect.appendChild(optionelement5);
+
+        }
+
+        else if(getvalue == "Post Graduates")
+        {
+        var subselect = document.getElementById("subcategory1");
+            subselect.options.length = 0;
+            var optionelement = document.createElement("option");
+            var optionelement1 = document.createElement("option");
+            var optionelement2 = document.createElement("option");
+            var optionelement3 = document.createElement("option");
+            var optionelement4 = document.createElement("option");
+            var text = document.createTextNode("M.Tech");
+            var text1 = document.createTextNode("M.Com");
+            var text2 = document.createTextNode("M.Pharma");
+            var text3 = document.createTextNode("MCA");
+            var text4= document.createTextNode("MSc");
+            optionelement.appendChild(text);
+            optionelement1.appendChild(text1);
+            optionelement2.appendChild(text2);
+            optionelement3.appendChild(text3);
+            optionelement4.appendChild(text4);
+
+            subselect.appendChild(optionelement);
+            subselect.appendChild(optionelement1);
+            subselect.appendChild(optionelement2);
+            subselect.appendChild(optionelement3);
+            subselect.appendChild(optionelement4);
+        }
+
+        else if(getvalue == "SSC & BANK")
+        {
+        var subselect = document.getElementById("subcategory1");
+            subselect.options.length = 0;
+            var optionelement = document.createElement("option");
+            var optionelement1 = document.createElement("option");
+            var optionelement2 = document.createElement("option");
+            var optionelement3 = document.createElement("option");
+
+            var text = document.createTextNode("Math");
+            var text1 = document.createTextNode("General Knowledge");
+            var text2 = document.createTextNode("Reasoning");
+            var text3 = document.createTextNode("English");
+
+            optionelement.appendChild(text);
+            optionelement1.appendChild(text1);
+            optionelement2.appendChild(text2);
+            optionelement3.appendChild(text3);
+
+            subselect.appendChild(optionelement);
+            subselect.appendChild(optionelement1);
+            subselect.appendChild(optionelement2);
+            subselect.appendChild(optionelement3);
+
+        }
+    }
+
+
+
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'homeurl:hemu'%}">
+        {% load static %}
+        <img src="{% static 'bookstore/images/hicon.png' %}" width="30" height="30" class="d-inline-block align-top"
+             alt="">
+        Logout
+    </a>
+</nav>
+<div class="box">
+    <h1 style="text-align:center">Donation Form</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        <div class="container">
+            <section class="row">
+                <div class="col-sm-6">
+                    <h5 style="color:blue;">Category</h5>
+
+
+                    <select name="Category" id="optionMenu" onchange="myFunction()" required="">
+                        <option value="Select"><--Select--></option>
+                        <option value="Arts">Arts</option>
+                        <option value="School">School & colleges</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Entrance">Entrance</option>
+                        <option value="Compitative">Compitative</option>
+                        <option value="Biography">Biography</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <select name="subcategory" id="subcategory" onchange="subFunction()" required="">
+
+                    </select>
+                    <br>
+                    <br>
+                    <select name="subcategory1" id="subcategory1" required="">
+
+                    </select>
+                    <br>
+                    <br>
+                    <h5 style="color:blue;">Book Name</h5>
+
+
+                    <input type="text" name="Book_Name" required="">
+                    <br>
+
+                    <br>
+
+
+                    <h5 style="color:blue;">Author Name</h5>
+
+
+                    <input type="text" name="Author_Name" required="">
+                    <br>
+                    <br>
+
+                    <input class="btn btn-primary" type="file" name="filename" required=""><br>
+                </div>
+
+                <div class="col-sm-6">
+
+                    <h5 style="color:blue;">Donater name</h5>
+                    <input type="text" name="Donater_name" required="">
+
+
+                    <br>
+                    <br>
+
+                    <h5 style="color:blue;">Mob No</h5>
+
+
+                    <input pattern="[1-9]{1}[0-9]{9}" type="text" name="Mob_No" required="" maxlength="10">
+                    <br>
+
+                    <br>
+
+
+                    <h5 style="color:blue;">Email id</h5>
+
+
+                    <input type="text" name="Email_id" required="">
+                    <br>
+                    <br>
+
+                    <h5 style="color:blue;">Select State</h5>
+                    <select name="Select_State" required="">
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Punjab">Punjab</option>
+                    </select>
+                    <br>
+                    <br>
+                    <h5 style="color:blue;">Enter city name</h5>
+
+
+                    <input type="text" name="City_name" required="">
+
+                    <br>
+                    <br>
+
+
+                    <button type="submit"/>
+
+
+                </div>
+            </section>
+
+        </div>
+    </form>
+
+</div>
+
+
+</body>
+</html>

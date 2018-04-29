@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bookstore/shortstory.css' %}"/>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>short story</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'homeurl:hemu'%}">
+        {% load static %}
+        <img src="{% static 'bookstore/images/hicon.png' %}" width="30" height="30" class="d-inline-block align-top"
+             alt="">
+        Home
+    </a>
+</nav>
+<div class="container" style="background-color:lightgray;height:600px;width:900px;">
+    <h4>Art of the Short Story</h4>
+
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="{% static 'bookstore/images//novels/teeth.jpg' %}" alt="A image"
+                 style="height:100px;width:150px;"/>
+            <br>
+            <a href="{% url 'homeurl:art1'%}" class="btn btn-two">teeth of december</a>
+
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'bookstore/images//novels/index2.jpg' %}" alt="A image"
+                 style="height:100px;width:150px;"/>
+            <br>
+            <a href="{% url 'homeurl:art1'%}" class="btn btn-two">Dubliner</a>
+
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'bookstore/images//novels/index3.png' %}" alt="A image"
+                 style="height:100px;width:150px;"/>
+            <br>
+            <a href="{% url 'homeurl:art1'%}" class="btn btn-two">This is how you lose her</a>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="{% static 'bookstore/images/novels/index4.jpg' %}" alt="A image"
+                         style="height:100px;width:150px;"/>
+                    <br>
+                    <a href="{% url 'homeurl:art1'%}" class="btn btn-two">Interpreter of maladies</a>
+                </div>
+                <div class="col-sm-4">
+                    <img src="{% static 'bookstore/images/novels/index5.jpg' %}" alt="A image"
+                         style="height:100px;width:150px;"/>
+                    <br>
+                    <a href="{% url 'homeurl:art1'%}" class="btn btn-two">Different Seasons</a>
+                </div>
+                <div class="col-sm-4">
+                    <img src="{% static 'bookstore/images/novels/before.jpg' %}" alt="A image"
+                         style="height:100px;width:150px;"/>
+                    <br>
+                    <a href="{% url 'homeurl:art1'%}" class="btn btn-two">To all the boy i've</a>
+
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="{% static 'bookstore/images/novels/index6.jpg' %}" alt="A image"
+                                 style="height:100px;width:150px;"/>
+                            <br>
+                            <a href="{% url 'homeurl:art1'%}" class="btn btn-two">Fragile Thin</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="{% static 'bookstore/images/novels/rules.jpg' %}" alt="A image"
+                                 style="height:100px;width:150px;"/>
+                            <br>
+                            <a href="{% url 'homeurl:art1'%}" class="btn btn-two">Beautiful broken rules</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="{% static 'bookstore/images/novels/index7.jpg' %}" alt="A image"
+                                 style="height:100px;width:150px;"/>
+                            <br>
+                            <a href="{% url 'homeurl:art1'%}" class="btn btn-two">Your life</a>
+
+
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="{% static 'bookstore/images/novels/index7.jpg' %}" alt="A image"
+                                         style="height:100px;width:150px;"/>
+                                    <br>
+                                    <a href="{% url 'homeurl:art1'%}" class="btn btn-two">The Bazar of bad dreams</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="{% static 'bookstore/images/novels/index9.jpg' %}"
+                                         alt="A image"
+                                         style="height:100px;width:150px;"/>
+                                    <br>
+                                    <a href="{% url 'homeurl:art1'%}" class="btn btn-two">The Dead</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="{% static 'bookstore/images/novels/images1.jpg' %}" alt="A image"
+                                         style="height:100px;width:150px;"/>
+                                    <br>
+                                    <a href="{% url 'homeurl:art1'%}" class="btn btn-two">The YEllow wallpaper</a>
+
+
+                                </div>
+                            </div>
+
+
+</body>
+</html>

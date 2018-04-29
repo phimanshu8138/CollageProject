@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bookstore/novel.css' %}"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eleanor & park</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'homeurl:hemu'%}">
+        {% load static %}
+        <img src="{% static 'bookstore/images/hicon.png' %}" width="30" height="30" class="d-inline-block align-top"
+             alt="">
+        Home
+    </a>
+</nav>
+<div class="card" style="width: 90rem;">
+    <img class="card-img-top" src="{% static 'bookstore/images/novels/novelbg2.png' %}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">
+
+            Author: Rainbow Rowell
+
+            Genres: Young Adult , Romance
+        </h5>
+
+        <p class="card-text">A Michael L. Printz Honor Book
+
+            A New York Times Notable Book
+
+            Indies Choice, Young Adult Book of the Year
+
+            Boston Globe-Horn Book Award for Fiction
+
+            Goodreads Choice Award, Best Young Adult Book of the Year
+
+            Amazon Editors’ Top 10 Books of the Year
+
+            Amazon’s Best Teen and Young Adult Book of the Year
+
+            Audible’s Best Teen Audiobook of the Year
+
+            An Odyssey Honor Audiobook
+
+            International Reading Association Award for Young Adult Fiction
+
+            Amelia Elizabeth Walden Award
+
+            “A beautiful, haunting love story.”
+            — John Green, bestselling author of The Fault in Our Stars, for The New York Times Book Review
+
+            “An honest, heart-wrenching portrayal of imperfect but unforgettable love.”
+            — The Horn Book, starred review
+
+            “This sexy, smart, tender romance thrums with punk rock and true love.”
+            — Gayle Forman, bestselling author of If I Stay
+
+            “A breathless, achingly good read about love and outsiders.”
+            — Stephanie Perkins, author of Anna and the French Kiss
+
+            “Luscious, delicate . . . tells as vivid a story about young love, mix tapes and comic books as you’re
+            likely to read.”
+            — Linda Holmes, NPR, “50 Wonderful Things from the Year in Pop Culture”
+
+            “Funny, hopeful, foulmouthed, sexy and tear-jerking, this winning romance will captivate teen and adult
+            readers alike.”
+            — Kirkus, starred review
+
+            “Good luck putting down Eleanor & Park . . . You’ll melt at all the tiny moments that add up to a killer
+            romance.”
+            — Seventeen
+
+            “The pure, fear-laced, yet steadily maturing relationship Eleanor and Park develop is urgent and
+            breathtaking and, of course, heartbreaking, too.”
+            — Booklist, starred review
+
+            “Rowell keeps things surprising, and the solution — imperfect but believable — maintains the novel’s
+            delicate balance of light and dark.”
+            — Publishers Weekly, starred review
+
+            “Deliriously beautiful . . . My only problem with this book was that I finished it. And I knew I wanted to
+            keep it in my life, always.”
+            — Jenny Bird for Forever Young Adult
+
+            “Rowell nails the voices of her teen protagonists — her writing swings from profane to profound, but it’s
+            always real and always raw.”
+            — Petra Mayer for NPR Books</p>
+    </div>
+</div>
+
+</body>
+</html>

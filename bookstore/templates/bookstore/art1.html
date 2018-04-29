@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bookstore/novel.css' %}"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eleanor & park</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'homeurl:hemu'%}">
+        {% load static %}
+        <img src="{% static 'bookstore/images/hicon.png' %}" width="30" height="30" class="d-inline-block align-top"
+             alt="">
+        Home
+    </a>
+</nav>
+<div class="card" style="width: 90rem;">
+    <img class="card-img-top" src="{% static 'bookstore/images/novels/art1.jpg' %}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">
+
+
+            Author: George Saunders
+
+            Genres: Young Adult
+
+        </h5>
+
+        <p class="card-text">ONE
+
+            The pale boy with unfortunate Prince Valiant bangs and cublike mannerisms hulked to the mudroom closet and
+            requisitioned Dad’s white coat. Then requisitioned the boots he’d spray-painted white. Painting the pellet
+            gun white had been a no. That was a gift from Aunt Chloe. Every time she came over he had to haul it out so
+            she could make a big stink about the woodgrain.
+
+            Today’s assignation: walk to pond, ascertain beaver dam. Likely he would be detained. By that species that
+            lived amongst the old rock wall. They were small but, upon emerging, assumed certain proportions. And gave
+            chase. This was just their methodology. His aplomb threw them loops. He knew that. And revelled it. He would
+            turn, level the pellet gun, intone: Are you aware of the usage of this human implement?
+
+            Blam!
+
+            They were Netherworlders. Or Nethers. They had a strange bond with him. Sometimes for whole days he would
+            just nurse their wounds. Occasionally, for a joke, he would shoot one in the butt as it fled. Who henceforth
+            would limp for the rest of its days. Which could be as long as an additional nine million years.
+
+            Safe inside the rock wall, the shot one would go, Guys, look at my butt.As a group, all would look at
+            Gzeemon’s butt, exchanging sullen glances of: Gzeemon shall indeed be limping for the next nine million
+            years, poor bloke.
+
+            Because yes: Nethers tended to talk like that guy in “Mary Poppins.”
+
+            Which naturally raised some mysteries as to their origin here on Earth.
+
+            Detaining him was problematic for the Nethers. He was wily. Plus could not fit through their rock-wall
+            opening. When they tied him up and went inside to brew their special miniaturizing potion—Wham!—he would
+            snap their antiquated rope with a move from his self-invented martial-arts system, Toi Foi, a.k.a. Deadly
+            Forearms. And place at their doorway an implacable rock of suffocation, trapping them inside.</p>
+    </div>
+</div>
+
+</body>
+</html>

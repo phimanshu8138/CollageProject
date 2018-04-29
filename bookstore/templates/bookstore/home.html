@@ -1,0 +1,347 @@
+{% load static %}
+<style>
+body
+{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+.navbar
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 0 0 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.navbar .channel
+{
+    postion: relative;
+}
+.navbar ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+    background: rgba(0,0,0, .5);
+}
+.navbar ul li
+{
+    list-style: none;
+    line-height: 80px;
+    text-align: center;
+}
+.navbar ul li a
+{
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover
+
+{
+    background: #fd2928;
+    color: #fff;
+}
+.elegantshd {
+ color: #2c2c2c;
+  background-color: #;
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+   }
+
+
+</style>
+
+
+<style>
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+.social-footer
+{
+    display: flex;
+    position: absolute;
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%);
+}
+.social-footer li
+{
+    list-style: none;
+}
+.social-footer li a
+{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+.social-footer li a .fa
+{
+    position: relative;
+    color: #262626;
+    transition: .5s;
+}
+.social-footer li a:hover .fa
+{
+    color: #fff;
+    transform: rotateY(360deg);
+}
+.social-footer li a:before
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+.social-footer li a:hover:before
+{
+    top: 0;
+}
+.social-footer li:nth-child(1) a:before
+{
+    background: #3b5999;
+}
+.social-footer li:nth-child(2) a:before
+{
+    background: #55acee;
+}
+.social-footer li:nth-child(3) a:before
+{
+    background: #ff5700;
+}
+.social-footer li:nth-child(4) a:before
+{
+    background: #dd4b39;
+}
+.social-footer li:nth-child(5) a:before
+{
+    background: #bd081c;
+}
+
+
+
+
+
+</style>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>first book donation site:donate,buy free in india</title>
+    <link rel="icon" type="file/png" href="{% static 'bookstore/images/img4.png' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <h1 class="elegantshd"> BookStore </h1>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="{% url 'homeurl:contact'%}">Contact</a></li>
+        <!--<li><a href="{% url 'homeurl:dotame'%}">About Us</a></li>-->
+        <li><a href="{% url 'homeurl:himanshu'%}">Login</a></li>
+    </ul>
+</div>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            {% load static %}
+            <img src="{% static 'bookstore/images/slide1.jpg' %}" alt="Los Angeles" width="100%" height="600">
+            <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            {% load static %}
+            <img src="{% static 'bookstore/images/slide2.png' %}" alt="Los Angeles" width="100%" height="600">
+            <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            {% load static %}
+            <img src="{% static 'bookstore/images/slide3.png' %}" alt="Los Angeles" width="100%" height="600">
+            <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header bg-secondary mb-3">New Books Update</div>
+    <div class="card-body">
+        <marquee direction="up" scrollamount="5">
+            Mathematics= BY MANOHAR REY<br><br>
+            english by sp sharama<br><br>
+            AYN RAND. Ayn Rand Institute, Facebook<br><br>
+            ERNEST HEMINGWAY. Central Press/Getty Images<br><br>
+            JOAN DIDION. Jemal Countess<br><br>
+            RAY BRADBURY. Evening Standard<br><br>
+            GEORGE R.R. MARTIN<br><br>
+            VLADIMIR NABOKOV. Keystone<br><br>
+        </marquee>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <section class="row">
+        <div class="col-sm-12">
+            <h1 class="vc_custom_heading" style="text-align: center">
+                Latest From Our Blog
+            </h1>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="{% static 'bookstore/images/img5.jpg' %}"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">The Art of the Short Story</h5>
+                            <p class="card-text">Nulla eleifend vel risus eget ultricies. Praesent sed
+                                tortor sem. Vestibulum elementum</p>
+                            <a href="{% url 'homeurl:art'%}" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="{% static 'bookstore/images/img6.jpg' %}"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Novels that sharpen your mind</h5>
+                            <p class="card-text">Nulla eleifend vel risus eget ultricies. Praesent sed
+                                tortor sem. Vestibulum elementum;</p>
+                            <a href="{% url 'homeurl:shortstory'%}" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="{% static 'bookstore/images/img7.jpg' %}"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Boost Your Creative Process</h5>
+                            <p class="card-text">Nulla eleifend vel risus eget ultricies. Praesent sed
+                                tortor sem. Vestibulum elementum;</p>
+                            <a href="{% url 'homeurl:creative'%}" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</div>
+<hr>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+
+    </div>
+    <div class="clear"></div>
+    <div class="container-fluid footer-links">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">
+                    <a href="{% url 'homeurl:copy'%}">copyright statement</a>
+                    |
+                    <a href="{% url 'homeurl:copy'%}">Hyperlinking Policy</a>
+                    |
+                    <a href="{% url 'homeurl:copy'%}">Terms & Conditions</a>
+                    |
+                    <a href="{% url 'homeurl:copy'%}">Privacy policy</a>
+                    |
+                    <a href="{% url 'homeurl:copy'%}">Disclaimer</a>
+
+                </p>
+            </div>
+
+        </div>
+        </hr>
+    </div>
+
+
+</div>
+<ul class="social-footer">
+    <li><a href="https://www.facebook.com/himanshu.pant.77964"><i class="fa fa-facebook-official"
+                                                                  aria-hidden="true"></i>
+    </a></li>
+    <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i>
+    </a></li>
+    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i>
+    </a></li>
+    <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-google" aria-hidden="true"></i>
+    </a></li>
+    <li><a href="https://in.pinterest.com/"><i class="fa fa-pinterest" aria-hidden="true"></i>
+
+    </a></li>
+
+</ul>
+</div>
+
+
+</body>
+</html>

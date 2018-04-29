@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bookstore/shortstory.css' %}"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>short story</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'homeurl:hemu'%}">
+        {% load static %}
+        <img src="{% static 'bookstore/images/hicon.png' %}" width="30" height="30" class="d-inline-block align-top"
+             alt="">
+        Home
+    </a>
+</nav>
+
+<div class="container" style="background-color:lightgray;height:600px;width:900px;">
+    <h4>NOVELS</h4>
+
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="{% static 'bookstore/images//novels/image2.jpg' %}" alt="A image"
+                 style="height:100px;width:150px;"/>
+            <br>
+            <a href="{% url 'homeurl:creative1'%}" class="btn btn-two" style="color:darkorange" ;>Thinking fast and
+                slow</a>
+
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'bookstore/images//novels/image3.jpg' %}" alt="A image"
+                 style="height:100px;width:150px;"/>
+            <br>
+            <a href="" class="btn btn-two" style="color:darkorange;">Steal Like an Artist</a>
+
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'bookstore/images//novels/image4.jpg' %}" alt="A image"
+                 style="height:100px;width:150px;"/>
+            <br>
+            <a href="" class="btn btn-two" style="color:darkorange" ;>Orbiting the Giant Hairball</a>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="{% static 'bookstore/images/novels/image5.jpg' %}" alt="A image"
+                         style="height:100px;width:150px;"/>
+                    <br>
+                    <a href="" class="btn btn-two">Orbiting the Giant Hairball</a>
+                </div>
+                <div class="col-sm-4">
+                    <img src="{% static 'bookstore/images/novels/image6.jpg' %}" alt="A image"
+                         style="height:100px;width:150px;"/>
+                    <br>
+                    <a href="" class="btn btn-two">The Everyday Work of Art</a>
+                </div>
+                <div class="col-sm-4">
+                    <img src="{% static 'bookstore/images/novels/image7.jpg' %}" alt="A image"
+                         style="height:100px;width:150px;"/>
+                    <br>
+                    <a href="" class="btn btn-two">Damn Good Advice </a>
+
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="{% static 'bookstore/images/novels/image8.jpg' %}" alt="A image"
+                                 style="height:100px;width:150px;"/>
+                            <br>
+                            <a href="" class="btn btn-two" style="color:green" ;>The Act of Creation</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="{% static 'bookstore/images/novels/image9.jpg' %}" alt="A image"
+                                 style="height:100px;width:150px;"/>
+                            <br>
+                            <a href="" class="btn btn-two" style="color:green;">Think!: Before It's Too Late</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="{% static 'bookstore/images/novels/image01.jpg' %}" alt="A image"
+                                 style="height:100px;width:150px;"/>
+                            <br>
+                            <a href="" class="btn btn-two" style="color:green;">The Creative Habit</a>
+
+
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="{% static 'bookstore/images/novels/image02.jpg' %}" alt="A image"
+                                         style="height:100px;width:150px;"/>
+                                    <br>
+                                    <a href="" class="btn btn-two">The Artist's Way</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="{% static 'bookstore/images/novels/image02.jpg' %}"
+                                         alt="A image"
+                                         style="height:100px;width:150px;"/>
+                                    <br>
+                                    <a href="" class="btn btn-two">Sita</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="{% static 'bookstore/images/novels/image03.jpg' %}" alt="A image"
+                                         style="height:100px;width:150px;"/>
+                                    <br>
+                                    <a href="" class="btn btn-two">Dan Brown</a>
+
+
+                                </div>
+                            </div>
+</body>
+</html>

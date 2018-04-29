@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bookstore/novel.css' %}"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eleanor & park</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'homeurl:hemu'%}">
+        {% load static %}
+        <img src="{% static 'bookstore/images/hicon.png' %}" width="30" height="30" class="d-inline-block align-top"
+             alt="">
+        Home
+    </a>
+</nav>
+<div class="card" style="width: 90rem;">
+    <img class="card-img-top" src="{% static 'bookstore/images/novels/think1.png' %}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">
+            Two Brains Running
+
+
+            Author: JIM HOLT
+
+        </h5>
+
+        <p class="card-text">ONE
+
+            In 2002, Daniel Kahneman won the Nobel in economic science. What made this unusual is that Kahneman is a
+            psychologist. Specifically, he is one-half of a pair of psychologists who, beginning in the early 1970s, set
+            out to dismantle an entity long dear to economic theorists: that arch-rational decision maker known as Homo
+            economicus. The other half of the dismantling duo, Amos Tversky, died in 1996 at the age of 59. Had Tversky
+            lived, he would certainly have shared the Nobel with Kahneman, his longtime collaborator and dear friend.
+
+            Human irrationality is Kahneman’s great theme. There are essentially three phases to his career. In the
+            first, he and Tversky did a series of ingenious experiments that revealed twenty or so “cognitive biases” —
+            unconscious errors of reasoning that distort our judgment of the world. Typical of these is the “anchoring
+            effect”: our tendency to be influenced by irrelevant numbers that we happen to be exposed to. (In one
+            experiment, for instance, experienced German judges were inclined to give a shoplifter a longer sentence if
+            they had just rolled a pair of dice loaded to give a high number.) In the second phase, Kahneman and Tversky
+            showed that people making decisions under uncertain conditions do not behave in the way that economic models
+            have traditionally assumed; they do not “maximize utility.” The two then developed an alternative account of
+            decision making, one more faithful to human psychology, which they called “prospect theory.” (It was for
+            this achievement that Kahneman was awarded the Nobel.) In the third phase of his career, mainly after the
+            death of Tversky, Kahneman has delved into “hedonic psychology”: the science of happiness, its nature and
+            its causes. His findings in this area have proved disquieting — and not just because one of the key
+            experiments involved a deliberately prolonged colonoscopy..</p>
+    </div>
+</div>
+
+</body>
+</html>
